@@ -9,7 +9,7 @@ namespace ToDoList.Tests
 {
     public class ItemTest
     {
-        private TestDatabaseContext db = new TestDatabaseContext();
+        private ToDoListContext db = new ToDoListContext();
 
         [Fact]
         public void GetDescriptionTest()

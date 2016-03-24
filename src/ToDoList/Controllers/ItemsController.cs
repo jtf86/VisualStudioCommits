@@ -13,10 +13,16 @@ namespace ToDoList.Controllers
     public class ItemsController : Controller
     {
         private ToDoListContext db = new ToDoListContext();
+        private IItemRepository itemRepo;
+
+        public ItemsController()
+        {
+            this.itemRepo = new EFItemRepository();
+        }
 
         public IActionResult Index()
         {
-            return View(db.Items.ToList());
+            return View(itemRepo.Items.ToList());
         }
         public IActionResult Details(int id)
         {
