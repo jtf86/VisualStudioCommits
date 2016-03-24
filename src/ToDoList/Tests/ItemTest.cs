@@ -24,6 +24,12 @@ namespace ToDoList.Tests
                 }.AsQueryable());
 
             ItemsController controller = new ItemsController(mock.Object);
+
+            // Act
+            var actual = (List<Item>)controller.Index().Model;
+
+            // Assert
+            Assert.IsType<List<Item>>(actual);
         }
     }
 }
