@@ -1,0 +1,6 @@
+C:\Users\jfran\Desktop\NET\ToDoList\DnxUnitTests\bin\Debug\DnxUnitTests.dll
+C:\Users\jfran\Desktop\NET\ToDoList\DnxUnitTests\bin\Debug\DnxUnitTests.pdb
+C:\Users\jfran\Desktop\NET\ToDoList\DnxUnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\jfran\Desktop\NET\ToDoList\DnxUnitTests\obj\Debug\DnxUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\jfran\Desktop\NET\ToDoList\DnxUnitTests\obj\Debug\DnxUnitTests.dll
+C:\Users\jfran\Desktop\NET\ToDoList\DnxUnitTests\obj\Debug\DnxUnitTests.pdb

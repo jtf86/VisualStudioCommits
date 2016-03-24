@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "To Do List - Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model ToDoList.Models.Item
+
+
+    <h2>Details</h2>
+    <hr />
+    @Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+

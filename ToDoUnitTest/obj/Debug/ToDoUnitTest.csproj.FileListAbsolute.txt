@@ -1,0 +1,6 @@
+C:\Users\jfran\Desktop\NET\ToDoList\ToDoUnitTest\bin\Debug\ToDoUnitTest.dll
+C:\Users\jfran\Desktop\NET\ToDoList\ToDoUnitTest\bin\Debug\ToDoUnitTest.pdb
+C:\Users\jfran\Desktop\NET\ToDoList\ToDoUnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\jfran\Desktop\NET\ToDoList\ToDoUnitTest\obj\Debug\ToDoUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\jfran\Desktop\NET\ToDoList\ToDoUnitTest\obj\Debug\ToDoUnitTest.dll
+C:\Users\jfran\Desktop\NET\ToDoList\ToDoUnitTest\obj\Debug\ToDoUnitTest.pdb
