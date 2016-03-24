@@ -1700,6 +1700,15 @@
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
         }
       },
+      "Moq/4.2.1510.2205": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Moq.dll": {}
+        }
+      },
       "Newtonsoft.Json/7.0.1": {
         "type": "package",
         "compile": {
@@ -3738,6 +3747,15 @@
         },
         "runtime": {
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
+        }
+      },
+      "Moq/4.2.1510.2205": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Moq.dll": {}
         }
       },
       "Newtonsoft.Json/7.0.1": {
@@ -5780,6 +5798,15 @@
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
         }
       },
+      "Moq/4.2.1510.2205": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Moq.dll": {}
+        }
+      },
       "Newtonsoft.Json/7.0.1": {
         "type": "package",
         "compile": {
@@ -7585,6 +7612,21 @@
         "Microsoft.Net.Http.Headers.nuspec"
       ]
     },
+    "Moq/4.2.1510.2205": {
+      "type": "package",
+      "sha512": "nqMoHSP5f04/kyKbRUjGgzqtIb5LUUs0H6llHOkQJ5Takx4Ezr2H+59pkIgxkmpbHAcGmc/KsyRZUs1ehnPYag==",
+      "files": [
+        "lib/net35/Moq.dll",
+        "lib/net35/Moq.xml",
+        "lib/net40/Moq.dll",
+        "lib/net40/Moq.xml",
+        "lib/sl5/Moq.Silverlight.dll",
+        "lib/sl5/Moq.Silverlight.xml",
+        "Moq.4.2.1510.2205.nupkg",
+        "Moq.4.2.1510.2205.nupkg.sha512",
+        "Moq.nuspec"
+      ]
+    },
     "Newtonsoft.Json/7.0.1": {
       "type": "package",
       "sha512": "q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
@@ -8580,7 +8622,8 @@
       "Microsoft.AspNet.StaticFiles >= 1.0.0-rc1-final",
       "xunit >= 2.1.0",
       "xunit.runner.dnx >= 2.1.0-rc1-*",
-      "FluentAssertions >= 4.2.2"
+      "FluentAssertions >= 4.2.2",
+      "Moq >= 4.2.1510.2205"
     ],
     "DNX,Version=v4.5.1": []
   }

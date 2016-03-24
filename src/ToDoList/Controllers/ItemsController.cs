@@ -15,9 +15,9 @@ namespace ToDoList.Controllers
         private ToDoListContext db = new ToDoListContext();
         private IItemRepository itemRepo;
 
-        public ItemsController()
+        public ItemsController(IItemRepository itemRepo)
         {
-            this.itemRepo = new EFItemRepository();
+            this.itemRepo = itemRepo;
         }
 
         public IActionResult Index()
