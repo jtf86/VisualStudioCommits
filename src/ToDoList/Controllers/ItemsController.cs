@@ -25,10 +25,11 @@ namespace ToDoList.Controllers
             this.itemRepo = itemRepo;
         }
 
-        public IActionResult Index()
+        public ViewResult Index()
         {
             return View(itemRepo.Items.ToList());
         }
+
         public IActionResult Details(int id)
         {
             Item thisItem = db.Items.FirstOrDefault(x => x.ItemId == id);

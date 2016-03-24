@@ -11,6 +11,7 @@ namespace ToDoList.Tests
 {
     public class ItemTest
     {
+        [Fact]
         public void Item_Index_View_Contains_ListOfItems_Model()
         {
             // Arrange
@@ -26,10 +27,10 @@ namespace ToDoList.Tests
             ItemsController controller = new ItemsController(mock.Object);
 
             // Act
-            var actual = (List<Item>)controller.Index().Model;
+            var result = (List<Item>)controller.Index().ViewData.Model;
 
             // Assert
-            Assert.IsType<List<Item>>(actual);
+            Assert.IsType<List<Item>>(result);
         }
     }
 }
