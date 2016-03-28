@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNet.Mvc;
 using Microsoft.Data.Entity;
+using System.Collections.Generic;
 using ToDoList.Controllers;
 using ToDoList.Models;
 using Xunit;
@@ -15,10 +16,23 @@ namespace ToDoList.Tests
             ItemsController controller = new ItemsController();
 
             //Act
-            var Result = controller.Index();
+            var result = controller.Index();
 
             //Assert
-            Assert.IsType<ViewResult>(Result);
+            Assert.IsType<ViewResult>(result);
+        }
+
+        [Fact]
+        public void Get_ModelListItemIndex_Test()
+        {
+            //Arrange
+            ViewResult indexView = new ItemsController().Index() as ViewResult;
+
+            //Act
+            var result = indexView.ViewData.Model;
+
+            //Assert
+            Assert.IsType<List<Item>>(result);
         }
     }
 }
