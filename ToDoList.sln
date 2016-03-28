@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ToDoList", "src\ToDoList\ToDoList.xproj", "{9447E42E-DB96-4322-ADF0-0CC87FAF5A92}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C5CA8A20-AABB-4231-92A3-DFB87A0EFC53}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ToDoList.Tests", "tests\Tests\ToDoList.Tests.xproj", "{40B806E2-CD0D-4286-8F40-713AC69A3E4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +26,16 @@ Global
 		{9447E42E-DB96-4322-ADF0-0CC87FAF5A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9447E42E-DB96-4322-ADF0-0CC87FAF5A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9447E42E-DB96-4322-ADF0-0CC87FAF5A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B806E2-CD0D-4286-8F40-713AC69A3E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B806E2-CD0D-4286-8F40-713AC69A3E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B806E2-CD0D-4286-8F40-713AC69A3E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B806E2-CD0D-4286-8F40-713AC69A3E4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9447E42E-DB96-4322-ADF0-0CC87FAF5A92} = {D7B4BA28-0F04-455E-846A-F65D2037AE83}
+		{40B806E2-CD0D-4286-8F40-713AC69A3E4A} = {C5CA8A20-AABB-4231-92A3-DFB87A0EFC53}
 	EndGlobalSection
 EndGlobal

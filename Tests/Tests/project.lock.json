@@ -140,21 +140,6 @@
           "lib/dnx451/EntityFramework.Relational.Design.dll": {}
         }
       },
-      "FluentAssertions/4.2.2": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Xml",
-          "System.Xml.Linq"
-        ],
-        "compile": {
-          "lib/net45/FluentAssertions.Core.dll": {},
-          "lib/net45/FluentAssertions.dll": {}
-        },
-        "runtime": {
-          "lib/net45/FluentAssertions.Core.dll": {},
-          "lib/net45/FluentAssertions.dll": {}
-        }
-      },
       "Ix-Async/1.2.5": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1700,15 +1685,6 @@
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Moq/4.2.1510.2205": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Moq.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Moq.dll": {}
-        }
-      },
       "Newtonsoft.Json/7.0.1": {
         "type": "package",
         "compile": {
@@ -1955,8 +1931,7 @@
           "Microsoft.Framework.Configuration.Json": "1.0.0-beta8",
           "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
           "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
-          "Microsoft.Framework.DependencyInjection": "1.0.0-beta8",
-          "Moq": "4.2.1510.2205"
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta8"
         }
       },
       "xunit/2.1.0": {
@@ -2205,21 +2180,6 @@
         },
         "runtime": {
           "lib/dnx451/EntityFramework.Relational.Design.dll": {}
-        }
-      },
-      "FluentAssertions/4.2.2": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Xml",
-          "System.Xml.Linq"
-        ],
-        "compile": {
-          "lib/net45/FluentAssertions.Core.dll": {},
-          "lib/net45/FluentAssertions.dll": {}
-        },
-        "runtime": {
-          "lib/net45/FluentAssertions.Core.dll": {},
-          "lib/net45/FluentAssertions.dll": {}
         }
       },
       "Ix-Async/1.2.5": {
@@ -3770,15 +3730,6 @@
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Moq/4.2.1510.2205": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Moq.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Moq.dll": {}
-        }
-      },
       "Newtonsoft.Json/7.0.1": {
         "type": "package",
         "compile": {
@@ -4025,8 +3976,7 @@
           "Microsoft.Framework.Configuration.Json": "1.0.0-beta8",
           "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
           "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
-          "Microsoft.Framework.DependencyInjection": "1.0.0-beta8",
-          "Moq": "4.2.1510.2205"
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta8"
         }
       },
       "xunit/2.1.0": {
@@ -4275,21 +4225,6 @@
         },
         "runtime": {
           "lib/dnx451/EntityFramework.Relational.Design.dll": {}
-        }
-      },
-      "FluentAssertions/4.2.2": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Xml",
-          "System.Xml.Linq"
-        ],
-        "compile": {
-          "lib/net45/FluentAssertions.Core.dll": {},
-          "lib/net45/FluentAssertions.dll": {}
-        },
-        "runtime": {
-          "lib/net45/FluentAssertions.Core.dll": {},
-          "lib/net45/FluentAssertions.dll": {}
         }
       },
       "Ix-Async/1.2.5": {
@@ -5840,15 +5775,6 @@
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Moq/4.2.1510.2205": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Moq.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Moq.dll": {}
-        }
-      },
       "Newtonsoft.Json/7.0.1": {
         "type": "package",
         "compile": {
@@ -6095,8 +6021,7 @@
           "Microsoft.Framework.Configuration.Json": "1.0.0-beta8",
           "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
           "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
-          "Microsoft.Framework.DependencyInjection": "1.0.0-beta8",
-          "Moq": "4.2.1510.2205"
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta8"
         }
       },
       "xunit/2.1.0": {
@@ -6213,7 +6138,7 @@
   "libraries": {
     "ToDoList/1.0.0": {
       "type": "project",
-      "path": "../src/ToDoList/project.json"
+      "path": "../../src/ToDoList/project.json"
     },
     "EntityFramework/6.1.3": {
       "type": "package",
@@ -6336,107 +6261,6 @@
         "lib/net451/EntityFramework.Relational.Design.dll",
         "lib/net451/EntityFramework.Relational.Design.xml",
         "lib/netcore50/_._"
-      ]
-    },
-    "FluentAssertions/4.2.2": {
-      "type": "package",
-      "sha512": "M61dFQoixpFPjglvD20LzCnX6UWeDcn4kaIaTBnEc1NdEZNq8FdKMVaZEp35mIJIE8AQRj80zEZ3K0d4GM64fQ==",
-      "files": [
-        "FluentAssertions.4.2.2.nupkg",
-        "FluentAssertions.4.2.2.nupkg.sha512",
-        "FluentAssertions.nuspec",
-        "lib/dotnet/FluentAssertions.Core.dll",
-        "lib/dotnet/FluentAssertions.Core.pdb",
-        "lib/dotnet/FluentAssertions.dll",
-        "lib/dotnet/FluentAssertions.pdb",
-        "lib/dotnet/FluentAssertions.xml",
-        "lib/monoandroid/FluentAssertions.Core.dll",
-        "lib/monoandroid/FluentAssertions.Core.pdb",
-        "lib/monoandroid/FluentAssertions.Core.xml",
-        "lib/monotouch/FluentAssertions.Core.dll",
-        "lib/monotouch/FluentAssertions.Core.pdb",
-        "lib/monotouch/FluentAssertions.Core.xml",
-        "lib/net40/FluentAssertions.Core.dll",
-        "lib/net40/FluentAssertions.Core.pdb",
-        "lib/net40/FluentAssertions.Core.xml",
-        "lib/net40/FluentAssertions.dll",
-        "lib/net40/FluentAssertions.pdb",
-        "lib/net40/FluentAssertions.xml",
-        "lib/net45/FluentAssertions.Core.dll",
-        "lib/net45/FluentAssertions.Core.pdb",
-        "lib/net45/FluentAssertions.Core.xml",
-        "lib/net45/FluentAssertions.dll",
-        "lib/net45/FluentAssertions.pdb",
-        "lib/net45/FluentAssertions.xml",
-        "lib/portable-monotouch+monoandroid+xamarin.ios/FluentAssertions.Core.dll",
-        "lib/portable-monotouch+monoandroid+xamarin.ios/FluentAssertions.Core.pdb",
-        "lib/portable-monotouch+monoandroid+xamarin.ios/FluentAssertions.Core.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.pdb",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.pdb",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.XML",
-        "lib/portable-win81+wpa81/FluentAssertions.Core.dll",
-        "lib/portable-win81+wpa81/FluentAssertions.Core.pdb",
-        "lib/portable-win81+wpa81/FluentAssertions.Core.xml",
-        "lib/portable-win81+wpa81/FluentAssertions.dll",
-        "lib/portable-win81+wpa81/FluentAssertions.pdb",
-        "lib/portable-win81+wpa81/FluentAssertions.pri",
-        "lib/portable-win81+wpa81/FluentAssertions.xml",
-        "lib/sl5/de/Microsoft.CSharp.resources.dll",
-        "lib/sl5/de/System.Xml.Linq.resources.dll",
-        "lib/sl5/es/Microsoft.CSharp.resources.dll",
-        "lib/sl5/es/System.Xml.Linq.resources.dll",
-        "lib/sl5/FluentAssertions.Core.dll",
-        "lib/sl5/FluentAssertions.Core.pdb",
-        "lib/sl5/FluentAssertions.Core.xml",
-        "lib/sl5/FluentAssertions.dll",
-        "lib/sl5/FluentAssertions.pdb",
-        "lib/sl5/FluentAssertions.xml",
-        "lib/sl5/fr/Microsoft.CSharp.resources.dll",
-        "lib/sl5/fr/System.Xml.Linq.resources.dll",
-        "lib/sl5/it/Microsoft.CSharp.resources.dll",
-        "lib/sl5/it/System.Xml.Linq.resources.dll",
-        "lib/sl5/ja/Microsoft.CSharp.resources.dll",
-        "lib/sl5/ja/System.Xml.Linq.resources.dll",
-        "lib/sl5/ko/Microsoft.CSharp.resources.dll",
-        "lib/sl5/ko/System.Xml.Linq.resources.dll",
-        "lib/sl5/Microsoft.CSharp.dll",
-        "lib/sl5/Microsoft.CSharp.xml",
-        "lib/sl5/Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.dll",
-        "lib/sl5/Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.xml",
-        "lib/sl5/ru/Microsoft.CSharp.resources.dll",
-        "lib/sl5/ru/System.Xml.Linq.resources.dll",
-        "lib/sl5/System.Xml.Linq.dll",
-        "lib/sl5/System.Xml.Linq.xml",
-        "lib/sl5/zh-Hans/Microsoft.CSharp.resources.dll",
-        "lib/sl5/zh-Hans/System.Xml.Linq.resources.dll",
-        "lib/sl5/zh-Hant/Microsoft.CSharp.resources.dll",
-        "lib/sl5/zh-Hant/System.Xml.Linq.resources.dll",
-        "lib/win81/FluentAssertions.Core.dll",
-        "lib/win81/FluentAssertions.Core.pdb",
-        "lib/win81/FluentAssertions.Core.xml",
-        "lib/win81/FluentAssertions.dll",
-        "lib/win81/FluentAssertions.pdb",
-        "lib/win81/FluentAssertions.pri",
-        "lib/win81/FluentAssertions.xml",
-        "lib/wp8/FluentAssertions.Core.dll",
-        "lib/wp8/FluentAssertions.Core.pdb",
-        "lib/wp8/FluentAssertions.Core.xml",
-        "lib/wp8/FluentAssertions.dll",
-        "lib/wp8/FluentAssertions.pdb",
-        "lib/wp8/FluentAssertions.xml",
-        "lib/wpa81/FluentAssertions.Core.dll",
-        "lib/wpa81/FluentAssertions.Core.pdb",
-        "lib/wpa81/FluentAssertions.Core.xml",
-        "lib/wpa81/FluentAssertions.dll",
-        "lib/wpa81/FluentAssertions.pdb",
-        "lib/wpa81/FluentAssertions.pri",
-        "lib/wpa81/FluentAssertions.xml",
-        "lib/xamarin.ios/FluentAssertions.Core.dll",
-        "lib/xamarin.ios/FluentAssertions.Core.pdb",
-        "lib/xamarin.ios/FluentAssertions.Core.xml"
       ]
     },
     "Ix-Async/1.2.5": {
@@ -7679,21 +7503,6 @@
         "Microsoft.Net.Http.Headers.nuspec"
       ]
     },
-    "Moq/4.2.1510.2205": {
-      "type": "package",
-      "sha512": "nqMoHSP5f04/kyKbRUjGgzqtIb5LUUs0H6llHOkQJ5Takx4Ezr2H+59pkIgxkmpbHAcGmc/KsyRZUs1ehnPYag==",
-      "files": [
-        "lib/net35/Moq.dll",
-        "lib/net35/Moq.xml",
-        "lib/net40/Moq.dll",
-        "lib/net40/Moq.xml",
-        "lib/sl5/Moq.Silverlight.dll",
-        "lib/sl5/Moq.Silverlight.xml",
-        "Moq.4.2.1510.2205.nupkg",
-        "Moq.4.2.1510.2205.nupkg.sha512",
-        "Moq.nuspec"
-      ]
-    },
     "Newtonsoft.Json/7.0.1": {
       "type": "package",
       "sha512": "q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
@@ -8673,25 +8482,9 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "EntityFramework >= 6.1.3",
-      "EntityFramework.Core >= 7.0.0-rc1-final",
-      "EntityFramework.MicrosoftSqlServer >= 7.0.0-rc1-final",
-      "Microsoft.AspNet.Authentication.Cookies >= 1.0.0-rc1-final",
-      "Microsoft.AspNet.IISPlatformHandler >= 1.0.0-rc1-final",
-      "Microsoft.AspNet.Mvc >= 6.0.0-rc1-final",
-      "Microsoft.AspNet.Mvc.ViewFeatures >= 6.0.0-rc1-final",
-      "Microsoft.AspNet.Server.Kestrel >= 1.0.0-rc1-final",
-      "EntityFramework.Commands >= 7.0.0-rc1-final",
-      "Microsoft.Framework.Configuration.Json >= 1.0.0-beta8",
-      "Microsoft.Framework.ConfigurationModel >= 1.0.0-beta4",
-      "Microsoft.Framework.ConfigurationModel.Json >= 1.0.0-beta4",
-      "Microsoft.Framework.DependencyInjection >= 1.0.0-beta8",
-      "Microsoft.AspNet.StaticFiles >= 1.0.0-rc1-final",
+      "ToDoList >= 1.0.0-*",
       "xunit >= 2.1.0",
-      "xunit.runner.dnx >= 2.1.0-rc1-*",
-      "Moq >= 4.2.1510.2205",
-      "FluentAssertions >= 4.2.2",
-      "ToDoList >= 1.0.0-*"
+      "xunit.runner.dnx >= 2.1.0-rc1-*"
     ],
     "DNX,Version=v4.5.1": []
   }
