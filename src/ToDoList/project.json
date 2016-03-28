@@ -23,7 +23,6 @@
 
   "commands": {
     "web": "Microsoft.AspNet.Server.Kestrel",
-    "test": "xunit.runner.dnx"
   },
 
   "frameworks": {
