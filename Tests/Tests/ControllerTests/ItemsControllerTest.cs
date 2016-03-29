@@ -60,6 +60,7 @@ namespace ToDoList.Tests
             Assert.Contains<Item>(testItem, collection);
         }
 
+        [Fact]
         public void Item_Index_View_Contains_ListOfItems_Model()
         {
             // Arrange
@@ -72,13 +73,13 @@ namespace ToDoList.Tests
                     new Item {ItemId = 3, Description = "Sweep the floor" }
                 }.AsQueryable());
 
-            ItemsController controller = new ItemsController(mock.Object);
+            ViewResult indexView = new ItemsController().Index() as ViewResult;
 
             // Act
-            var actual = (List<Item>)controller.Index().Model;
+            var result = indexView.ViewData.Model;
 
             // Assert
-            Assert.IsType<List<Item>>(actual);
+            Assert.IsType<List<Item>>(result);
         }
 
     }

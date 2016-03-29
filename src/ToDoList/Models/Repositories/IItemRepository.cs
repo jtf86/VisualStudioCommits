@@ -9,6 +9,8 @@ namespace ToDoList.Models
     {
         IQueryable<Item> Items { get; }
         Item Save(Item item);
+        Item Edit(Item item);
+        void Remove(Item item);
         void Delete(Item item);
     }
 }

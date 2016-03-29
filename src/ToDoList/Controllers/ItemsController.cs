@@ -27,7 +27,7 @@ namespace ToDoList.Controllers
         }
 
 
-        public IActionResult Index()
+        public ViewResult Index()
         {
             return View(db.Items.ToList());
         }
@@ -45,8 +45,7 @@ namespace ToDoList.Controllers
         [HttpPost]
         public IActionResult Create(Item item)
         {
-            db.Items.Add(item);
-            db.SaveChanges();
+            db.Save(item);
             return RedirectToAction("Index");
         }
 
@@ -59,8 +58,7 @@ namespace ToDoList.Controllers
         [HttpPost]
         public IActionResult Edit(Item item)
         {
-            db.Entry(item).State = EntityState.Modified;
-            db.SaveChanges();
+            db.Edit(item);
             return RedirectToAction("Index");
         }
         public IActionResult Delete(int id)
@@ -73,8 +71,7 @@ namespace ToDoList.Controllers
         public IActionResult DeleteConfirmed(int id)
         {
             Item thisItem = db.Items.FirstOrDefault(x => x.ItemId == id);
-            db.Items.Remove(thisItem);
-            db.SaveChanges();
+            db.Remove(thisItem);
             return RedirectToAction("Index");
         }
     }

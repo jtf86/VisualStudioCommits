@@ -32,5 +32,18 @@ namespace ToDoList.Models
             db.Items.Remove(item);
             db.SaveChanges();
         }
+
+        public Item Edit(Item item)
+        {
+            db.Entry(item).State = EntityState.Modified;
+            db.SaveChanges();
+            return item;
+        }
+
+        public void Remove(Item item)
+        {
+            db.Items.Remove(item);
+            db.SaveChanges();
+        }
     }
 }
