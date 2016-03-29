@@ -11,6 +11,5 @@ namespace ToDoList.Models
         Item Save(Item item);
         Item Edit(Item item);
         void Remove(Item item);
-        void Delete(Item item);
     }
 }

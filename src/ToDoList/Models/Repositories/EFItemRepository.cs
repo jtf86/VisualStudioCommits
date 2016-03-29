@@ -15,22 +15,9 @@ namespace ToDoList.Models
 
         public Item Save(Item item)
         {
-            if (item.ItemId == 0)
-            {
-                db.Items.Add(item);
-            }
-            else
-            {
-                db.Entry(item).State = EntityState.Modified;
-            }
+            db.Items.Add(item);
             db.SaveChanges();
             return item;
-        }
-
-        public void Delete(Item item)
-        {
-            db.Items.Remove(item);
-            db.SaveChanges();
         }
 
         public Item Edit(Item item)

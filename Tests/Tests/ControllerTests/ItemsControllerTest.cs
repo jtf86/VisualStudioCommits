@@ -65,15 +65,13 @@ namespace ToDoList.Tests
         {
             // Arrange
             Mock<IItemRepository> mock = new Mock<IItemRepository>();
-
             mock.Setup(m => m.Items).Returns(new Item[]
                 {
                     new Item {ItemId = 1, Description = "Wash the dog" },
                     new Item {ItemId = 2, Description = "Do the dishes" },
                     new Item {ItemId = 3, Description = "Sweep the floor" }
                 }.AsQueryable());
-
-            ViewResult indexView = new ItemsController().Index() as ViewResult;
+            ViewResult indexView = new ItemsController(mock.Object).Index() as ViewResult;
 
             // Act
             var result = indexView.ViewData.Model;
