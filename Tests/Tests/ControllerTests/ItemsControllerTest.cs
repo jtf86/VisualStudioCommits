@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using ToDoList.Controllers;
 using ToDoList.Models;
 using Xunit;
+using System.Linq;
+using Moq;
 
 namespace ToDoList.Tests
 {
@@ -57,5 +59,27 @@ namespace ToDoList.Tests
             // Assert
             Assert.Contains<Item>(testItem, collection);
         }
+
+        public void Item_Index_View_Contains_ListOfItems_Model()
+        {
+            // Arrange
+            Mock<IItemRepository> mock = new Mock<IItemRepository>();
+
+            mock.Setup(m => m.Items).Returns(new Item[]
+                {
+                    new Item {ItemId = 1, Description = "Wash the dog" },
+                    new Item {ItemId = 2, Description = "Do the dishes" },
+                    new Item {ItemId = 3, Description = "Sweep the floor" }
+                }.AsQueryable());
+
+            ItemsController controller = new ItemsController(mock.Object);
+
+            // Act
+            var actual = (List<Item>)controller.Index().Model;
+
+            // Assert
+            Assert.IsType<List<Item>>(actual);
+        }
+
     }
 }

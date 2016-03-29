@@ -12,7 +12,20 @@ namespace ToDoList.Controllers
 {
     public class ItemsController : Controller
     {
-        private ToDoListContext db = new ToDoListContext();
+        private IItemRepository db;
+
+        public ItemsController(IItemRepository itemRepo = null)
+        {
+            if (itemRepo == null)
+            {
+                this.db = new EFItemRepository();
+            }
+            else
+            {
+                this.db = itemRepo;
+            }
+        }
+
 
         public IActionResult Index()
         {
