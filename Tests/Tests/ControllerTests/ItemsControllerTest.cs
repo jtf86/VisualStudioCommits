@@ -37,18 +37,12 @@ namespace ToDoList.Tests
         }
 
         [Fact]
-        //[Theory]
-        //[InlineData("test item")]
-        //[InlineData("sample item")]
-        //[InlineData("example item")]
         public void Post_MethodAddsItem_Test()
-        //public void Post_MethodAddsItem_Test(string value)
         {
             // Arrange
             ItemsController controller = new ItemsController();
             Item testItem = new Item();
             testItem.Description = "test";
-            //testItem.Description = value;
 
             // Act
             controller.Create(testItem);
