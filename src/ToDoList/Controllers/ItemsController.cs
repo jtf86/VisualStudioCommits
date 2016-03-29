@@ -14,7 +14,7 @@ namespace ToDoList.Controllers
 
         public ItemsController(IItemRepository thisRepo = null)
         {
-            if (itemRepo == null)
+            if (thisRepo == null)
             {
                 this.itemRepo = new EFItemRepository();
             }
