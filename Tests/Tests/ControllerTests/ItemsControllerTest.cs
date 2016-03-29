@@ -55,13 +55,13 @@ namespace ToDoList.Tests
             ViewResult indexView = new ItemsController().Index() as ViewResult;
             var collection = indexView.ViewData.Model as IEnumerable<Item>;
 
+            // Database Cleanup
+            ToDoListContext db = new ToDoListContext();
+            db.Items.Remove(testItem);
+            db.SaveChanges();
+
             // Assert
             Assert.Contains<Item>(testItem, collection);
-
-            // Database Cleanup
-            //ToDoListContext db = new ToDoListContext();
-            //db.Items.Remove(testItem);
-            //db.SaveChanges();
         }
     }
 }
