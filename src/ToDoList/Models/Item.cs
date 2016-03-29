@@ -26,6 +26,11 @@ namespace ToDoList.Models
                 return this.ItemId.Equals(newItem.ItemId);
             }
         }
+
+        public override int GetHashCode()
+        {
+            return this.ItemId.GetHashCode();
+        }
     }
 
 
