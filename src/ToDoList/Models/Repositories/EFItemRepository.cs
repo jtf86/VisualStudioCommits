@@ -21,7 +21,6 @@ namespace ToDoList.Models
                 this.db = context;
             }
         }
-        
 
         public IQueryable<Item> Items
         { get { return db.Items; } }
