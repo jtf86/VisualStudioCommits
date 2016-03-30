@@ -91,5 +91,25 @@ namespace ToDoList.Tests
             // Assert
             Assert.Contains<Item>(testItem, collection);
         }
+
+        [Fact]
+        public void DB_RemoveEntry_Test()
+        {
+            // Arrange
+            ItemsController controller = new ItemsController(db);
+            Item testItem = new Item();
+            testItem.Description = "TestDb item";
+            controller.Create(testItem);
+
+
+            // Act
+            var collection = (controller.Index() as ViewResult).ViewData.Model as IEnumerable<Item>;
+            controller.DeleteConfirmed(testItem.ItemId);
+            var updatedCollection = (controller.Index() as ViewResult).ViewData.Model as IEnumerable<Item>;
+
+            // Assert
+            Assert.Contains<Item>(testItem, collection);
+            Assert.DoesNotContain<Item>(testItem, updatedCollection);
+        }
     }
 }
