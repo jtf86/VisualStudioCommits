@@ -13,7 +13,7 @@ namespace ToDoList.Tests
     public class ItemsControllerTest : IDisposable
     {
         Mock<IItemRepository> mock = new Mock<IItemRepository>();
-        EFItemRepository db = new EFItemRepository(new ToDoListContextTest());
+        EFItemRepository db = new EFItemRepository(new TestDbContext());
 
         public void Dispose()
         {

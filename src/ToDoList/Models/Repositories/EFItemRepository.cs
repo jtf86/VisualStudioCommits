@@ -10,7 +10,7 @@ namespace ToDoList.Models
     {
         private ToDoListContext db;
 
-        public EFItemRepository(ToDoListContextTest context = null)
+        public EFItemRepository(TestDbContext context = null)
         {
             if (context == null)
             {
