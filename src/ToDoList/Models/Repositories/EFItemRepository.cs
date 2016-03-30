@@ -10,15 +10,15 @@ namespace ToDoList.Models
     {
         private ToDoListContext db;
 
-        public EFItemRepository(TestDbContext context = null)
+        public EFItemRepository(ToDoListContext connection = null)
         {
-            if (context == null)
+            if (connection == null)
             {
                 this.db = new ToDoListContext();
             }
             else
             {
-                this.db = context;
+                this.db = connection;
             }
         }
 

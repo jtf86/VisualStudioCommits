@@ -1,17 +1,17 @@
-﻿using Microsoft.Data.Entity;
+﻿//using Microsoft.Data.Entity;
 
 
-namespace ToDoList.Models
-{
+//namespace ToDoList.Models
+//{
 
-    public class TestDbContext : ToDoListContext
-    {
-        public override DbSet<Item> Items { get; set; }
+//    public class TestDbContext : ToDoListContext
+//    {
+//        public override DbSet<Item> Items { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=ToDoListTest;integrated security = True");
-        }
-    }
+//        protected override void OnConfiguring(DbContextOptionsBuilder options)
+//        {
+//            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=ToDoListTest;integrated security = True");
+//        }
+//    }
 
-}
+//}
