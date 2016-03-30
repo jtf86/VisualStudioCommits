@@ -25,7 +25,7 @@ namespace ToDoList.Tests
         }
 
         [Fact]
-        public void Mock_Get_ViewResultIndex_Test()
+        public void Mock_GetViewResultIndex_Test()
         {
             //Arrange
             DbSetup();
@@ -71,33 +71,7 @@ namespace ToDoList.Tests
         }
 
         [Fact]
-        public void DB_Get_ViewResultIndex_Test()
-        {
-            //Arrange
-            ItemsController controller = new ItemsController(db);
-
-            //Act
-            var result = controller.Index();
-
-            //Assert
-            Assert.IsType<ViewResult>(result);
-        }
-
-        [Fact]
-        public void DB_IndexListOfItems_Test()
-        {
-            // Arrange
-            ViewResult indexView = new ItemsController(db).Index() as ViewResult;
-
-            // Act
-            var result = indexView.ViewData.Model;
-
-            // Assert
-            Assert.IsType<List<Item>>(result);
-        }
-
-        [Fact]
-        public void DB_ConfirmEntry_Test()
+        public void DB_CreatNewEntry_Test()
         {
             // Arrange
             ItemsController controller = new ItemsController(db);
