@@ -6,7 +6,7 @@ namespace ToDoList.Tests
     public class ItemTest
     {
         [Fact]
-        public void GetDescriptionTest()
+        public void GetDescription_Test()
         {
             //Arrange
             var item = new Item();
