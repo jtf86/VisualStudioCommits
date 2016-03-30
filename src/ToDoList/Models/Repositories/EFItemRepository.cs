@@ -45,5 +45,12 @@ namespace ToDoList.Models
             db.Items.Remove(item);
             db.SaveChanges();
         }
+
+        public void DeleteAll()
+        {
+            foreach (var item in db.Items)
+                db.Items.Remove(item);
+            db.SaveChanges();
+        }
     }
 }

@@ -6,13 +6,19 @@ using Xunit;
 using System.Linq;
 using Moq;
 using Microsoft.Data.Entity;
+using System;
 
 namespace ToDoList.Tests
 {
-    public class ItemsControllerTest
+    public class ItemsControllerTest : IDisposable
     {
         Mock<IItemRepository> mock = new Mock<IItemRepository>();
         EFItemRepository db = new EFItemRepository(new ToDoListContextTest());
+
+        public void Dispose()
+        {
+            db.DeleteAll();
+        }
 
         private void DbSetup()
         {
