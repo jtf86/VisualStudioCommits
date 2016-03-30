@@ -5,6 +5,7 @@ using ToDoList.Models;
 using Xunit;
 using System.Linq;
 using Moq;
+using Microsoft.Data.Entity;
 
 namespace ToDoList.Tests
 {
@@ -51,7 +52,7 @@ namespace ToDoList.Tests
         }
 
         [Fact]
-        public void Post_MethodAddsItem_Test()
+        public void ConfirmEntry_Test()
         {
             // Arrange
             DbSetup();
@@ -61,7 +62,6 @@ namespace ToDoList.Tests
             testItem.ItemId = 1;
 
             // Act
-            //controller.Create(testItem);
             ViewResult indexView = controller.Index() as ViewResult;
             var collection = indexView.ViewData.Model as IEnumerable<Item>;
 
