@@ -77,17 +77,16 @@ namespace ToDoList.Tests
         }
 
         [Fact]
-        public void DB_CreatNewEntry_Test()
+        public void DB_CreateNewEntry_Test()
         {
             // Arrange
             ItemsController controller = new ItemsController(db);
             Item testItem = new Item();
-            testItem.Description = "Test DB WORKS!!!";
+            testItem.Description = "TestDb item";
 
             // Act
             controller.Create(testItem);
-            ViewResult indexView = controller.Index() as ViewResult;
-            var collection = indexView.ViewData.Model as IEnumerable<Item>;
+            var collection = (controller.Index() as ViewResult).ViewData.Model as IEnumerable<Item>;
 
             // Assert
             Assert.Contains<Item>(testItem, collection);
