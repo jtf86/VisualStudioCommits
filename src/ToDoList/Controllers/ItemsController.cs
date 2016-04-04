@@ -44,6 +44,7 @@ namespace ToDoList.Controllers
         public IActionResult Create(Item item)
         {
             itemRepo.Save(item);
+            new TwilioMessage().SendJohnText(item.Description);
             return RedirectToAction("Index");
         }
 
@@ -70,6 +71,7 @@ namespace ToDoList.Controllers
         {
             Item thisItem = itemRepo.Items.FirstOrDefault(x => x.ItemId == id);
             itemRepo.Remove(thisItem);
+            new TwilioMessage().SendJohnText(thisItem.Description + " has been deleted");
             return RedirectToAction("Index");
         }
     }
