@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D7B4BA28-0F04-455E-846A-F65D2037AE83}"
+	ProjectSection(SolutionItems) = preProject
+		AuthToken.cs = AuthToken.cs
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{82F7FFFF-C104-4B7F-9B48-7143972ED9CF}"
 	ProjectSection(SolutionItems) = preProject
