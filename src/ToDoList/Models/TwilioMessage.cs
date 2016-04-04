@@ -10,7 +10,7 @@ namespace ToDoList.Models
         {
         }
 
-        public void SendJohnText(string item)
+        public void SendAlertText(string item)
         {
             // Find your Account Sid and Auth Token at twilio.com/user/account
             string AccountSid = "AC6324afe8d7eefea55b5cdd9fad49e7d0";
