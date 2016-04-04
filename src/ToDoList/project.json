@@ -18,7 +18,10 @@
     "Microsoft.Framework.Configuration.Json": "1.0.0-beta8",
     "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
     "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
-    "Microsoft.Framework.DependencyInjection": "1.0.0-beta8"
+    "Microsoft.Framework.DependencyInjection": "1.0.0-beta8",
+    "Twilio": "4.7.0",
+    "Twilio.Mvc": "3.2.0",
+    "Twilio.TwiML": "3.5.0"
   },
 
   "commands": {
