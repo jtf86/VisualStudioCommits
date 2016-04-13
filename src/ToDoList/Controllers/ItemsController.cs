@@ -44,7 +44,7 @@ namespace ToDoList.Controllers
         public IActionResult Create(Item item)
         {
             itemRepo.Save(item);
-            //new TwilioMessage().SendJohnText(item.Description);
+            new TwilioMessage().SendAlertText(item.Description);
             return RedirectToAction("Index");
         }
 

@@ -8,6 +8,7 @@ namespace ToDoList.Models
     {
         public TwilioMessage()
         {
+
         }
 
         public void SendAlertText(string item)
